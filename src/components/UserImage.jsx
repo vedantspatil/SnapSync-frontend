@@ -8,7 +8,7 @@ const UserImage = ({ image, size = "60px" }) => {
         width={size}
         height={size}
         alt="user"
-        src={`https://snapsync.onrender.com/assets/${image}`}
+        src={`https://snapsync-backend.onrender.com/assets/${image}`}
       />
     </Box>
   );

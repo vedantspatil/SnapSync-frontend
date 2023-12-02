@@ -17,7 +17,7 @@ const ProfilePage = () => {
 
   const getUser = async () => {
     const response = await fetch(
-      `https://snapsync.onrender.com/users/${userId}`,
+      `https://snapsync-backend.onrender.com/users/${userId}`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

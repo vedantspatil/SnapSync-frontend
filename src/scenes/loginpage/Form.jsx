@@ -69,7 +69,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      "https://snapsync.onrender.com/auth/register",
+      "https://snapsync-backend.onrender.com/auth/register",
       {
         method: "POST",
         body: formData,
@@ -87,7 +87,7 @@ const Form = () => {
   const login = async (values, onSubmitProps) => {
     //axios library for APIs
     const loggedInResponse = await fetch(
-      "https://snapsync.onrender.com/auth/login",
+      "https://snapsync-backend.onrender.com/auth/login",
       {
         method: "POST",
         headers: { "Content-Type": "application/json" },
