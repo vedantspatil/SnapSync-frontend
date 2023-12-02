@@ -16,12 +16,11 @@ import {
   REGISTER,
 } from "redux-persist";
 
-// Save the state in local state -> close the browser -> user info still available unless cleared cache
 import { disableReactDevTools } from "@fvilers/disable-react-devtools";
-if (process.env.NODE_ENV === "production") disableReactDevTools();
-
 import storage from "redux-persist/lib/storage";
 import { PersistGate } from "redux-persist/integration/react";
+
+if (process.env.NODE_ENV === "production") disableReactDevTools();
 
 const persistConfig = { key: "root", storage, version: 1 };
 const persistedReducer = persistReducer(persistConfig, authReducer);
